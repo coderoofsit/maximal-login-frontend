@@ -1,0 +1,21 @@
+{
+  "projects": {
+    "default": "maximal-security-services"
+  },
+  "targets": {
+    "maximal-security-services": {
+      "hosting": {
+        "login": [
+          "login-maximalsecurityservices"
+        ]
+      }
+    }
+  },
+  "etags": {
+    "maximal-security-services": {
+      "extensionInstances": {
+        "firestore-send-email": "0d2c9cebcb235339e15ea4567c9bfd6309594a33b765a544ae77ef0ca786b477"
+      }
+    }
+  }
+}

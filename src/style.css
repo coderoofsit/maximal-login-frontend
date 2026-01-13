@@ -1,0 +1,29 @@
+/* Ensure layout stability at high zoom */
+@media (max-width: 768px) {
+  body {
+    zoom: 100%; /* Reset browser zoom on mobile to prevent scaling issues */
+  }
+}
+
+html {
+  font-size: 16px; /* Base font size */
+}
+
+/* Scale font sizes and padding for high zoom */
+@media screen and (min-resolution: 1.25dppx) {
+  html {
+    font-size: 14px; /* Slightly smaller base font to prevent overflow */
+  }
+  input,
+  button,
+  a {
+    padding: 0.75rem; /* Increase padding for touch/visibility */
+  }
+}
+
+/* Prevent layout collapse on very small screens */
+@media (max-width: 480px) {
+  .max-w-md {
+    max-width: 90vw; /* Use viewport width to avoid squeezing */
+  }
+}
