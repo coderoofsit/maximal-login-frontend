@@ -13,6 +13,9 @@ const ContextProvider = ({ children }) => {
 
   const [isLoading, setIsLoading] = useState(true);
 
+  // signup/login UI state (used by LoginLayout links)
+  const [showSignUp, setShowSignUp] = useState(false);
+
   // popup
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [popupMessage, setPopupMessage] = useState("");
@@ -27,6 +30,8 @@ const ContextProvider = ({ children }) => {
         HandlePopUpClose,
         isLoading,
         setIsLoading,
+        showSignUp,
+        setShowSignUp,
         isPopupOpen,
         setIsPopupOpen,
         popupMessage,
